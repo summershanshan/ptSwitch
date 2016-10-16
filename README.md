@@ -25,20 +25,24 @@ switch样式
 
 Switch  js调用用法
 ------------------
-1. 在html中写上input标签<br>
- `<input type="checkbox" class="js-pt-user-switch" id="switch1" data-status="on" data-name="hello" data-disabled="true">`
+1. 在html中写上input标签 <br>
+      `<input type="checkbox" class="js-pt-user-switch" id="switch1" data-status="on" data-name="hello" data-disabled="true">`
 2. 先引入jquery.js<br>
    `<script src="../...jquery.min.js">` <br>
    然后引入check.js<br>
    `<script src="../js/check.js"></script>`
 3. 用jquery的形式调用函数$().ptSwitch(options,callback);<br>
-    `$(".container3").ptSwitch({` <br>
-             `targetInp:".js-pt-user-switch",` <br>
-             `onText:"开", ` <br>
-             `offText:"关",` <br>
-             `size:"lg",  `  <br>
-             `isCreateDom:"true"` <br>
-         `},hello); `
+<pre>
+    <code>
+        $(".container3").ptSwitch({`
+            `targetInp:".js-pt-user-switch",`
+             `onText:"开", `
+             `offText:"关",`
+             `size:"lg",  `
+             `isCreateDom:"true"`
+         `},hello);
+    </code>
+</pre>
 
 参数详解：
 ----
@@ -48,3 +52,14 @@ Switch  js调用用法
    size:      选填 开关的尺寸大小 分为三个 "sm","md","lg"(默认lg) <br>
    isCreateDom:选填  是否动态创建开关的dom结构 默认为false <br>
    callback:   选填  hello是回调函数
+
+<pre>
+    <code>
+    `$(".container3").ptSwitch({` <br>
+                `targetInp:".js-pt-user-switch",` <br>
+                 `onText:"开", ` <br>
+                 `offText:"关",` <br>
+                 `size:"lg",  `  <br>
+                 `isCreateDom:"true"` <br>
+             `},hello); `
+
