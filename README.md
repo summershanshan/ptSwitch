@@ -8,6 +8,7 @@ Switch、checkBox、Raido
 2. 其中checkBox和Radio直接是html,css代码，无需js调用
 3. switch组件是可用js直接调用的。其js依赖于jquery,是扩展的一个query插件
 注意在引用check.js之前需先引入jquery.js。
+4. 插件目前还算简陋 有待改进 欢迎各位大牛不吝指导
 
 checkbox样式
 ------------
