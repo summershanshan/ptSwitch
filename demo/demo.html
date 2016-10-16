@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckBox Radio Switch</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/check.css">
+    <style>
+        .container{
+            width: 600px;
+            height: 100px;
+            /*border:1px solid #eee;*/
+        }
+        .container1{
+            margin:30px auto 10px;
+        }
+        .container2{
+            height:100px;
+            margin:10px auto;
+        }
+        .container3{
+            margin:10px auto;
+            height:120px;
+        }
+        h1{
+            margin:20px 0;;
+            font-weight:bold;
+            font-size:20px;
+        }
+        fieldset{
+            height: 100%;
+            width: 100%;
+            padding:20px;
+        }
+        fieldset legend{
+            font-size:20px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+<!---------------------------------------------复选框------------------------------>
+<div class="container container1">
+    <fieldset>
+        <legend>复选框</legend>
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1" class="checkboxLab">选项一</label>
+        <input type="checkbox" id="checkbox2" checked>
+        <label for="checkbox2" class="checkboxLab">选项二</label>
+        <input type="checkbox" id="checkbox3" disabled>
+        <label for="checkbox3" class="checkboxLab">选项三</label>
+        <input type="checkbox" id="checkbox4" disabled checked>
+        <label for="checkbox4" class="checkboxLab">选项四</label>
+    </fieldset>
+</div>
+<!-------------------------------------------单选框-------------------------------->
+<div class="container container2">
+    <fieldset>
+        <legend>单选框默认样式</legend>
+        <input type="radio"name="radio1" id="radio1" class="radioDef">
+        <label for="radio1">单选一</label>
+        <input type="radio"name="radio1" id="radio2" checked class="radioDef">
+        <label for="radio2">单选二</label>
+        <input type="radio"name="radio1" id="radio3" disabled class="radioDef">
+        <label for="radio3">单选三</label>
+        <input type="radio"name="radio1" id="radio4" disabled="disabled" checked class="radioDef">
+        <label for="radio4">单选四</label>
+    </fieldset>
+</div>
+<div class="container container2">
+    <fieldset>
+        <legend>单选框新样式</legend>
+        <input type="radio"name="radio2" id="radio5" class="radioNew">
+        <label for="radio5">单选五</label>
+        <input type="radio"name="radio2" id="radio6" class="radioNew" checked>
+        <label for="radio6">单选六</label>
+        <input type="radio"name="radio2" id="radio7" class="radioNew" disabled>
+        <label for="radio7">单选七</label>
+        <input type="radio"name="radio2" id="radio8" class="radioNew" checked disabled>
+        <label for="radio8">单选八</label>
+    </fieldset>
+</div>
+<!------------------------------------switch开关------------------------------------->
+<div class="container container3">
+    <fieldset>
+        <legend>switch开关</legend>
+        <div class="pt-switch-wrap">
+            <input type="checkbox" id="switch4" data-name="hello">
+            <div class="pt-switch js-pt-switch md" data-status="on" data-name="hello">
+                <div class="switchLine">
+                    <span class="switchLine-on">ON</span>
+                    <span class="switchLine-off">OFF</span>
+                </div>
+                <span class="switchButton"></span>
+            </div>
+        </div>
+        <input type="checkbox" class="js-pt-user-switch" id="switch1" data-status="on" data-name="hello" data-disabled="true">
+        <input type="checkbox" class="js-pt-user-switch" id="switch2" data-status="off" data-name="hello">
+        <input type="checkbox" class="js-pt-user-switch" id="switch3" data-status="on" data-name="hello">
+    </fieldset>
+</div>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../js/check.js"></script>
+<script>
+    $(".container3").ptSwitch({
+        targetInp:".js-pt-user-switch",
+        onText:"开",
+        offText:"关",
+        isCreateDom:"true"
+    },hello);
+    function hello(){
+        console.log('这是回调函数');
+    }
+</script>
+</body>
+</html>

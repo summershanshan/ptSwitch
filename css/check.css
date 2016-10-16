@@ -1,0 +1,297 @@
+/*---------------------------------------单选框、多选框、switch开关-> start---------------*/
+/*-------------------------------公共样式---------------------*/
+input[type="checkbox"],input[type="radio"]{
+    display:none;
+}
+input[type="checkbox"]+label,
+input.radioDef+label{
+    position: relative;
+    display:inline-block;
+    line-height:20px;
+    padding-left:22px;
+    overflow:hidden;
+    font-size:14px;
+    color: #6e6e6e;
+    -webkit-user-select: none; /*防止选中文本*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:pointer;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+input[type="checkbox"] + label:before,
+input[type="checkbox"] + label:after,
+input.radioDef + label:before,
+input.radioDef + label:after,
+input.radioNew + label:before,
+input.radioNew + label:after{
+    content:"";
+    position: absolute;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+/*------------单选框（默认样式.radioDef）、多选框的label 选中字体颜色-----*/
+input[type="checkbox"]:checked + label,
+input.radioDef:checked + label{
+    color:#2EBE21;
+}
+/*-------------------单选框（默认样式.radioDef）、多选框的 禁用样式-----*/
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label{
+    opacity:0.5;
+    cursor:default;
+}
+input[type="checkbox"]:disabled + label:before,
+input[type="radio"]:disabled + label:before{
+    background-color: #9c9c9c;
+}
+input.radioNew:disabled + label{
+    background-color: #9c9c9c;
+}
+/*----------------------------------复选框样式--------------------*/
+input[type="checkbox"] + label:before{
+    width: 20px;
+    height: 20px;
+    left:0;
+    top:0;
+    border:2px solid #6e6e6e;
+    border-radius:5px;
+}
+input[type="checkbox"] + label:after{
+    width:25px;
+    height: 20px;
+    border-left:4px solid #6e6e6e;
+    border-bottom:4px solid #6e6e6e;
+    top:13px;
+    left:-20px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+}
+input[type="checkbox"]:checked + label:before{
+    border-color:#2EBE21;
+    border-radius:7px;
+}
+
+input[type="checkbox"]:checked + label:after{
+    display:block;
+    border-color:#2EBE21;
+    top:-9px;
+    left:-2px;
+}
+
+/*-----------------------------单选框默认(.radioDef)样式-------------------*/
+input.radioDef + label:before{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    border:2px solid #6e6e6e;
+    left:0;
+    top:0;
+    -webkit-box-shadow:0 0 3px #6e6e6e inset;
+    box-shadow:0 0 3px #6e6e6e inset;
+}
+input.radioDef:checked + label:before{
+    border-color:#2EBE21;
+}
+input.radioDef + label:after{
+    left:6px;
+    top:6px;
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background-color:#2EBE21;
+    opacity:0;
+    visibility:hidden;
+    -webkit-transform:scale(0);
+    transform:scale(0);
+}
+input.radioDef:checked + label:after{
+    opacity:1;
+    visibility:visible;
+    -webkit-transform:scale(1);
+    transform:scale(1);
+}
+/*----------------------单选框新样式（.radioNew）样式--------*/
+input.radioNew + label{
+    position: relative;
+    display:inline-block;
+    width: 120px;
+    height: 40px;
+    border-radius:20px;
+    background-color:#db5726;
+    padding:10px 50px 10px 10px;
+    text-align:left;
+    color:#fff;
+    -webkit-user-select: none; /*防止选中文本*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor:pointer;
+    box-shadow: 0 0 3px rgba(0,0,0,0.6);
+    overflow:hidden;
+}
+input.radioNew + label:before{
+    top:8px;
+    right:10px;
+    width: 26px;
+    height: 26px;
+    border-radius:50%;
+    box-shadow:0 0 13px rgba(0,0,0,0.8) inset;
+}
+input.radioNew + label:after{
+    width: 15px;
+    height: 15px;
+    background-color:#fff;
+    top:13px;
+    right:15px;
+    border-radius:50%;
+    opacity:0;
+    box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+input.radioNew:checked + label:after{
+    opacity:1;
+}
+input.radioNew:disabled + label{
+    opacity:0.5;
+}
+/*--------------------------switch开关-------------------------------*/
+.pt-switch-wrap{
+    display:inline-block;
+}
+.pt-switch-wrap .pt-switch{
+    position: relative;
+    border-radius:20px;
+    display:inline-block;
+    vertical-align:middle;
+    cursor:pointer;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+.pt-switch-wrap .pt-switch[data-status="on"]{
+    background-color:#db5726;
+}
+.pt-switch-wrap .pt-switch[data-status="off"]{
+    background-color:#666666;
+}
+.pt-switch-wrap .switchLine  span{
+    position: absolute;
+    color:#fff;
+}
+.pt-switch-wrap .pt-switch .switchButton{
+    position: absolute;
+    border-radius:50%;
+    top:-3px;
+    background-color:#fff;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+
+.pt-switch-wrap .pt-switch[data-status="on"] .switchButton{
+    border:1px solid #db5726;
+}
+.pt-switch-wrap .pt-switch[data-status="off"] .switchButton{
+    border:1px solid #666666;
+}
+.pt-switch-wrap .pt-switch[data-disabled="true"]{
+    opacity:0.3;
+    cursor:default;
+}
+/*-----------switch->大->lg----------*/
+.pt-switch-wrap .pt-switch.lg{
+    width: 100px;
+    height: 40px;
+    line-height:40px;
+    font-size:20px;
+}
+.pt-switch-wrap .pt-switch.lg .switchLine-on{
+    left:15px;
+}
+.pt-switch-wrap .pt-switch.lg .switchLine-off{
+    right:15px;
+}
+.pt-switch-wrap .pt-switch.lg .switchButton{
+    left:-4px;
+    width: 46px;
+    height: 46px;
+}
+.pt-switch-wrap .pt-switch.lg[data-status="on"] .switchButton{
+    left:55px;
+}
+/*-----------switch->中->md----------------*/
+.pt-switch-wrap .pt-switch.md{
+    width: 68px;
+    height: 28px;
+    line-height:28px;
+    font-size:14px;
+}
+.pt-switch-wrap .pt-switch.md .switchButton{
+    left:-1px;
+    width: 34px;
+    height: 34px;
+}
+.pt-switch-wrap .pt-switch.md .switchLine-on{
+    left:6px;
+}
+.pt-switch-wrap .pt-switch.md .switchLine-off{
+    right:6px;
+}
+.pt-switch-wrap .pt-switch.md[data-status="on"] .switchButton{
+    left:34px;
+}
+/*----------switch->小->sm------------------*/
+.pt-switch-wrap .pt-switch.sm{
+    width: 50px;
+    height: 22px;
+    line-height:22px;
+    font-size:12px;
+}
+.pt-switch-wrap .pt-switch.sm .switchButton{
+    left:-3px;
+    width: 28px;
+    height: 28px;
+}
+.pt-switch-wrap .pt-switch.sm .switchLine-on{
+    left:6px;
+}
+.pt-switch-wrap .pt-switch.sm .switchLine-off{
+    right:6px;
+}
+.pt-switch-wrap .pt-switch.sm[data-status="on"] .switchButton{
+    left:22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------单选框、多选框、switch开关-> end------------------------*/
