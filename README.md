@@ -11,28 +11,28 @@ Switch、checkBox、Raido
 
 checkbox样式
 ------------
-![checkbox](https://github.com / summershanshan / ptSwitch / raw / master / img / checkbox.png)
+![checkbox](https://github.com/summershanshan/ptSwitch/raw/master/img/checkbox.png)
 
 radio样式
 ---------
 分为radio默认样式和radio新样式 </br>
-![radio](https://github.com / summershanshan / ptSwitch / raw / master / img / radio.png)
+![radio](https://github.com/summershanshan/ptSwitch/raw/master/img/radio.png)
 
 switch样式
 ----------
-![switch](https://github.com / summershanshan / ptSwitch / raw / master / img / switch.png)
+![switch](https://github.com/summershanshan/ptSwitch/raw/master/img/switch.png)
 
 
 Switch  js调用用法
 ------------------
 1. 在html中写上input标签
-      ```
-      <input type="checkbox" class="js-pt-user-switch" id="switch1" data-status="on" data-name="hello" data-disabled="true">
-      ```
+   ```
+    <input type="checkbox" class="js-pt-user-switch" id="switch1" data-status="on" data-name="hello" data-disabled="true">
+   ```
 2. 先引入jquery.js
     ```
      <script src="../...jquery.min.js">
-   ```
+    ```
    然后引入check.js
    ```
    <script src="../js/check.js"></script>
@@ -51,7 +51,7 @@ Switch  js调用用法
 </pre>
 
 参数详解：
-----
+-------
    targetInp: 必填 需要创建开关的input标签选择器 <br>
    onText:    选填 开关处于打开状态的文字内容 默认为：ON <br>
    offText:   选填 开关处于打开状态的文字内容 默认为：OFF <br>
