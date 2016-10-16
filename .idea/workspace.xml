@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55310d0e-47ce-4d43-aeb2-c0d51a6bb3e9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="ptSwitch.iws" />
@@ -26,7 +27,7 @@
       <file leaf-file-name="demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
+            <state relative-caret-position="1802">
               <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
               <folding />
             </state>
@@ -36,9 +37,9 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="106">
-                <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="-722">
+                <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -49,12 +50,12 @@
       <file leaf-file-name="check.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS/check.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="65" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="65" />
+            <state relative-caret-position="-1087">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
               <folding>
-                <marker date="1476437670000" expanded="true" signature="1991:2506" placeholder="..." />
-                <marker date="1476437670000" expanded="true" signature="2171:2480" placeholder="..." />
-                <marker date="1476437670000" expanded="true" signature="2218:2396" placeholder="..." />
+                <marker date="1476608499309" expanded="true" signature="1991:2506" placeholder="..." />
+                <marker date="1476608499309" expanded="true" signature="2171:2480" placeholder="..." />
+                <marker date="1476608499309" expanded="true" signature="2218:2396" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -81,6 +82,7 @@
         <option value="$PROJECT_DIR$/demo/单选复选框.html" />
         <option value="$PROJECT_DIR$/css/check.css" />
         <option value="$PROJECT_DIR$/demo/demo.html" />
+        <option value="$PROJECT_DIR$/JS/check.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -273,15 +275,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1476601186305</updated>
-      <workItem from="1476601189447" duration="7031000" />
+      <workItem from="1476601189447" duration="7694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7031000" />
+    <option name="totallyTimeSpent" value="7694000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="3" width="1382" height="744" extended-state="1" />
+    <frame x="-13" y="3" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -344,19 +346,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/JS/check.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="65" />
+        <state relative-caret-position="-1087">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
           <folding>
-            <marker date="1476437670000" expanded="true" signature="1991:2506" placeholder="..." />
-            <marker date="1476437670000" expanded="true" signature="2171:2480" placeholder="..." />
-            <marker date="1476437670000" expanded="true" signature="2218:2396" placeholder="..." />
+            <marker date="1476608499309" expanded="true" signature="1991:2506" placeholder="..." />
+            <marker date="1476608499309" expanded="true" signature="2171:2480" placeholder="..." />
+            <marker date="1476608499309" expanded="true" signature="2218:2396" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
+        <state relative-caret-position="1802">
           <caret line="107" column="20" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="20" />
           <folding />
         </state>
@@ -364,9 +366,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="106">
-            <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-722">
+            <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
             <folding />
           </first_editor>
           <second_editor />
