@@ -15,7 +15,7 @@ checkbox样式
 
 radio样式
 ----
-分为radio默认样式和radio新样式
+分为radio默认样式和radio新样式 </br>
 ![radio](https://github.com / summershanshan / ptSwitch / raw / master / img / radio.png)
 
 switch样式
@@ -32,12 +32,12 @@ Switch  js调用用法
    然后引入check.js<br>
    `<script src="../js/check.js"></script>`
 3. 用jquery的形式调用函数$().ptSwitch(options,callback);<br>
-    `$(".container3").ptSwitch({`
-             `targetInp:".js-pt-user-switch",`
-             `onText:"开", `
-             `offText:"关",`
-             `size:"lg",  `
-             `isCreateDom:"true"`
+    `$(".container3").ptSwitch({` <br>
+             `targetInp:".js-pt-user-switch",` <br>
+             `onText:"开", ` <br>
+             `offText:"关",` <br>
+             `size:"lg",  `  <br>
+             `isCreateDom:"true"` <br>
          `},hello); `
 
 参数详解：
