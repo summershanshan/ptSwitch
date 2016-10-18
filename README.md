@@ -1,6 +1,5 @@
 Switch、checkBox、Raido
 =======================
-***
 插件简介
 -------
 1. 本插件主要是一些关于input标签的小组件，由于原生的checkbox,radio样式比较不美观
