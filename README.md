@@ -60,3 +60,7 @@ Switch  js调用用法
    size:      选填 开关的尺寸大小 分为三个 "sm","md","lg"(默认lg) <br>
    isCreateDom:选填  是否动态创建开关的dom结构 默认为false <br>
    callback:   选填  hello是回调函数
+   
+Copyright and license
+---------------------
+Code copyright 2016 summershanshan. Code released under the MIT license.
